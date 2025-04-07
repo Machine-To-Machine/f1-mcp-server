@@ -1,0 +1,76 @@
+[project]
+name = "f1-mcp-server"
+version = "0.1.0"
+description = "A Model Context Protocol (MCP) server that provides Formula One racing data for AI applications, including event schedules, driver information, telemetry data, race results, and performance analysis."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Machine-To-Machine" }]
+maintainers = [
+    { name = "Will Pak", email = "will@machinetomachine.ai" },
+    { name = "Harold Bott Jr.", email = "harold@machinetomachine.ai" }
+]
+keywords = ["m2m", "mcp", "fastf1", "f1", "formula1", "motorsport"]
+license = { text = "MIT" }
+license-files = ["LICEN[CS]E*"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+    "anyio>=4.9.0",
+    "click>=8.1.8",
+    "fastf1>=3.5.3",
+    "mcp>=1.6.0",
+    "numpy>=2.2.4",
+    "pandas>=2.2.3",
+    "uvicorn>=0.34.0",
+]
+
+[project.urls]
+Homepage = "https://www.machinetomachine.ai/"
+Repository = "https://github.com/Machine-To-Machine/f1-mcp-server.git"
+Issues = "https://github.com/Machine-To-Machine/f1-mcp-server/issues"
+Documentation = "https://github.com/Machine-To-Machine/f1-mcp-server/blob/main/README.md"
+Changelog = "https://github.com/Machine-To-Machine/f1-mcp-server/blob/main/CHANGELOG.md"
+"Source Code" = "https://github.com/Machine-To-Machine/f1-mcp-server"
+
+[project.scripts]
+f1-mcp-server = "f1_mcp_server:main"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.11.4",
+    "bandit>=1.7.7",
+    "pip-audit>=2.6.1",
+]
+
+[build-system]
+requires = ["hatchling", "uv-dynamic-versioning"]
+build-backend = "hatchling.build"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "S", "B", "A", "C4", "T10", "N"]
+ignore = []
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]
+
+[tool.bandit]
+exclude_dirs = ["tests"]
+skips = ["B101"]
+
+[tool.uv.workspace]
+members = ["."]
+
+[tool.uv.sources]
+f1-mcp-server = { workspace = true }
