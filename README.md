@@ -146,7 +146,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Authors
 
-- **Machine-To-Machine**
+- **Machine To Machine**
 
 ## Acknowledgements
 

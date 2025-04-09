@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "A Model Context Protocol (MCP) server that provides Formula One racing data for AI applications, including event schedules, driver information, telemetry data, race results, and performance analysis."
 readme = "README.md"
 requires-python = ">=3.10"
-authors = [{ name = "Machine-To-Machine" }]
+authors = [{ name = "Machine To Machine" }]
 maintainers = [
     { name = "Will Pak", email = "will@machinetomachine.ai" },
     { name = "Harold Bott Jr.", email = "harold@machinetomachine.ai" }
@@ -51,7 +51,7 @@ dev = [
 ]
 
 [build-system]
-requires = ["hatchling", "uv-dynamic-versioning"]
+requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.ruff.lint]
