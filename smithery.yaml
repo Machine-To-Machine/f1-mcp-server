@@ -1,0 +1,35 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - port
+      - transport
+      - logLevel
+    properties:
+      port:
+        type: number
+        default: 8000
+        description: Port to listen on for SSE transport (must be between 1024 and 65535)
+      transport:
+        type: string
+        default: stdio
+        description: Transport type for MCP server
+      logLevel:
+        type: string
+        default: INFO
+        description: Logging level for the server
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => { 
+      const args = ["-m", "f1_mcp_server", "--port", config.port.toString(), "--transport", config.transport, "--log-level", config.logLevel];
+      return { command: "python", args };
+    }
+  exampleConfig:
+    port: 8000
+    transport: stdio
+    logLevel: INFO
