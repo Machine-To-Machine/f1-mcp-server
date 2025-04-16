@@ -6,6 +6,10 @@
 
 A Model Context Protocol (MCP) server that provides Formula One racing data. This package exposes various tools for querying F1 data including event schedules, driver information, telemetry data, and race results.
 
+<a href="https://glama.ai/mcp/servers/@Machine-To-Machine/f1-mcp-server">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@Machine-To-Machine/f1-mcp-server/badge" alt="Formula One Server (Python) MCP server" />
+</a>
+
 ## Features
 
 - **Event Schedule**: Access the complete F1 race calendar for any season
