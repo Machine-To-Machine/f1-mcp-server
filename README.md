@@ -3,6 +3,7 @@
 [![PyPI version](https://img.shields.io/pypi/v/f1-mcp-server.svg)](https://pypi.org/project/f1-mcp-server/)
 [![Python Versions](https://img.shields.io/pypi/pyversions/f1-mcp-server.svg)](https://pypi.org/project/f1-mcp-server/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![smithery badge](https://smithery.ai/badge/@Machine-To-Machine/f1-mcp-server)](https://smithery.ai/server/@Machine-To-Machine/f1-mcp-server)
 
 A Model Context Protocol (MCP) server that provides Formula One racing data. This package exposes various tools for querying F1 data including event schedules, driver information, telemetry data, and race results.
 
@@ -23,6 +24,15 @@ A Model Context Protocol (MCP) server that provides Formula One racing data. Thi
 
 ## Installation
 
+### Installing via Smithery
+
+To install f1-mcp-server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@Machine-To-Machine/f1-mcp-server):
+
+```bash
+npx -y @smithery/cli install @Machine-To-Machine/f1-mcp-server --client claude
+```
+
+### Manual Installation
 In a `uv` managed python project, add to dependencies by:
 
 ```bash
