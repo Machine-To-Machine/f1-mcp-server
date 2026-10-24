@@ -3,7 +3,7 @@
 [![PyPI version](https://img.shields.io/pypi/v/f1-mcp-server.svg)](https://pypi.org/project/f1-mcp-server/)
 [![Python Versions](https://img.shields.io/pypi/pyversions/f1-mcp-server.svg)](https://pypi.org/project/f1-mcp-server/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![smithery badge](https://smithery.ai/badge/@Machine-To-Machine/f1-mcp-server)](https://smithery.ai/server/@Machine-To-Machine/f1-mcp-server)
+[![LightNow capabilities](https://lightnow.ai/badge/io.github.Machine-To-Machine/f1-mcp-server)](https://lightnow.ai/servers/io.github.Machine-To-Machine/f1-mcp-server)
 
 A Model Context Protocol (MCP) server that provides Formula One racing data. This package exposes various tools for querying F1 data including event schedules, driver information, telemetry data, and race results.
 
